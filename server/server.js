@@ -29,12 +29,15 @@ app.post('/upload', (req, res) => {
       return res.status(500).json({ message: 'Error uploading file', error: err });
     }
 
-    return res.status(200).json({
+    const responseData = {
       status: 'uploaded',
       originalName: originalName,
       savedAs: fileName,
       filePath: filePath,
-    });
+    };
+
+    // Send the JSON response
+    return res.status(200).json(responseData);
   });
 });
 
