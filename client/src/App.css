@@ -1,0 +1,40 @@
+/* App.css (or your preferred CSS file) */
+
+/* Style for the form container */
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  max-width: 400px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+
+
+/* Style for the upload progress */
+span {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Style for the submit button */
+.submit {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit:hover {
+  background-color: #0056b3;
+}
